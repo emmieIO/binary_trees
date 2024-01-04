@@ -2,8 +2,8 @@
 
 /**
  * binary_tree_height_b - Measures height of a binary tree for a bal tree
- * @tree: tree to go through
- * Return: the height
+ * @tree: tree to go through from
+ * Return: the height of aree
  */
 
 size_t binary_tree_height_b(const binary_tree_t *tree)
@@ -34,13 +34,13 @@ size_t binary_tree_height_b(const binary_tree_t *tree)
 
 int binary_tree_balance(const binary_tree_t *tree)
 {
-	int right = 0, left = 0, total = 0;
+	int right = 0, left = 0, sum = 0;
 
 	if (tree)
 	{
 		left = ((int)binary_tree_height_b(tree->left));
 		right = ((int)binary_tree_height_b(tree->right));
-		total = left - right;
+		sum = left - right;
 	}
-	return (total);
+	return (sum);
 }

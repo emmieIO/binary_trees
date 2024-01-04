@@ -2,7 +2,7 @@
 
 /**
  * binary_tree_is_full - checks if a binary tree is full
- * @tree: a pointer to the root node of the tree to check
+ * @tree: pointer to the root of the tree
  *
  * Return: 1 if the tree is full
  *         0 if the tree is not full

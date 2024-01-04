@@ -40,6 +40,13 @@ typedef struct levelorder_queue_s
 
 /* Printing helper function */
 void binary_tree_print(const binary_tree_t *);
+int _power_recursion(int x, int y);
+void binary_tree_printing(const binary_tree_t *tree);
+static size_t _height(const binary_tree_t *tree);
+static int print_t(const binary_tree_t *tree, int offset, int depth, char **s);
+int binary_tree_balance(const binary_tree_t *tree);
+size_t binary_tree_height_b(const binary_tree_t *tree);
+
 
 /* Task function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
