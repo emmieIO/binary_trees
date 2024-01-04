@@ -1,10 +1,14 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
-#include <stddef.h>
-#include <stdio.h>
 #include <stdlib.h>
+#include <stddef.h>
+#include <stdlib.h>
+#include <stdio.h>
 #include <string.h>
+#include <unistd.h>
+#include <math.h>
+#include <limits.h>
 
 /* Data structures */
 
@@ -38,15 +42,8 @@ typedef struct levelorder_queue_s
 	struct levelorder_queue_s *next;
 } levelorder_queue_t;
 
-/* Printing helper function */
+/* binary_tree_print.c */
 void binary_tree_print(const binary_tree_t *);
-int _power_recursion(int x, int y);
-void binary_tree_printing(const binary_tree_t *tree);
-static size_t _height(const binary_tree_t *tree);
-static int print_t(const binary_tree_t *tree, int offset, int depth, char **s);
-int binary_tree_balance(const binary_tree_t *tree);
-size_t binary_tree_height_b(const binary_tree_t *tree);
-
 
 /* Task function prototypes */
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -89,6 +86,10 @@ heap_t *heap_insert(heap_t **root, int value);
 heap_t *array_to_heap(int *array, size_t size);
 int heap_extract(heap_t **root);
 int *heap_to_sorted_array(heap_t *heap, size_t *size);
+
+
+/* Printing helper function */
+int _power_recursion(int x, int y);
 
 #endif /* BINARY_TREES_H */
 
